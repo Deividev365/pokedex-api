@@ -2,16 +2,16 @@
 const getPokemonUrl = id => `https://pokeapi.co/api/v2/pokemon/${id}`;
 
 
-
+// filtering every single pokemon in the API
 const generatePokemonPromises = () => Array(150)
     .fill().map((_, index) => fetch(getPokemonUrl(index + 1))
     .then(response => response.json()));
 
-
+// receiving each data //  
 const generateHTML = pokemons => pokemons.reduce((accumulator, {name, id, types}) => {
      const elementTypes = types.map(typeInfo => typeInfo.type.name);
 
-
+// showing the data from API inside html attributes // 
     accumulator = accumulator + `
 
         <li class="card ${elementTypes[0]}">

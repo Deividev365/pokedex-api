@@ -35,6 +35,11 @@ body {
 	text-align: center;
 	border-radius: 20px;
 	position: relative;
+	border: 8px solid #b7beb8;
+}
+
+.card:hover {
+	background-color: rgb(190, 188, 188);
 }
 
 .card::after {
@@ -51,19 +56,25 @@ body {
 }
 
 .steel {
-	background-color: #f4f4f4;
+	background-color: #e7dada;
 }
 
 .fire {
-	background-color: #FDDFDF;
+	background-color: #b64d4d;
+	border: 5px solid #f01c1c;
+
 }
 
 .grass {
 	background-color: #DEFDE0;
+	border: 5px solid #ffffff;
+
 }
 
 .electric {
 	background-color: #FCF7DE;
+	border: 5px solid #ebe9e0;
+
 }
 
 .water, .ice {
@@ -125,7 +136,7 @@ body {
 
 .card-subtitle {
 	margin-top: 5px;
-	color: #666;
+	color: rgb(15, 15, 14);
 	font-weight: lighter;
 	position: relative;
 	z-index: 2;
@@ -146,7 +157,7 @@ body {
 	}
 
 	80% {
-			transform: translateY(-2px);
+			transform: translateY(-50px);
 	}
 	100% {
 			transform: translateY(0);
